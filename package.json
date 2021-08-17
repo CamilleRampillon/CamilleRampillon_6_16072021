@@ -1,0 +1,23 @@
+{
+  "name": "camillerampillon_6_15072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./styles/main.scss:./styles/main.css --style compressed",
+    "lint": "./node_modules/.bin/eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilleRampillon/CamilleRampillon_6_15072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilleRampillon/CamilleRampillon_6_15072021/issues"
+  },
+  "homepage": "https://github.com/CamilleRampillon/CamilleRampillon_6_15072021#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
