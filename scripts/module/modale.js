@@ -113,7 +113,6 @@ function verifModal(currentPhotographer) {
       verifMail === true &&
       verifMsg === true
     ) {
-      const contactModal = document.querySelector(".dialog-windows");
       const modalTitle = document.querySelector(".modal-title");
       const close = document.querySelector(".close-btn");
 

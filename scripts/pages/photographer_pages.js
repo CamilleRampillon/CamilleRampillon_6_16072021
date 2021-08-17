@@ -7,7 +7,6 @@ import { displayLightbox, openLightbox } from "../module/lightbox.js";
 import { openDialog, closeDialog, verifModal } from "../module/modale.js";
 
 const linkToData = "data/FishEyeDataFR.json";
-const loader = document.querySelector(".loader-container");
 const urlParams = new URLSearchParams(window.location.search);
 const mediaList = new MediumList();
 const main = document.querySelector(".main");
@@ -15,7 +14,6 @@ const main = document.querySelector(".main");
 let mediaFactory = new Medium();
 let currentPhotographer;
 let totalLikes = [];
-let totalLikesPhotographer;
 
 window.addEventListener("load", () => {
   fetch(linkToData)

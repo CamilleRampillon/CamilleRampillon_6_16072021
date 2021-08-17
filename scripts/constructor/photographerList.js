@@ -64,11 +64,4 @@
   
       return new Set(tags);
     }
-    // retourne un photographe depuis son ID
-    getPhotographerById(id) {
-      for (const photographer of this.photographerList) {
-        if (photographer.id === id) {
-        }
-      }
-    }
   }

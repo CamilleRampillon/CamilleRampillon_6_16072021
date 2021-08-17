@@ -21,7 +21,7 @@ function displayBanner(currentPhotographer, displayMediaList) {
     const btnModal = document.createElement("button");
     const banner = document.querySelector(".banner");
   
-    btnModal.addEventListener("click", (e) => {
+    btnModal.addEventListener("click", () => {
       const dialog = document.querySelector(".dialog");
       const main = document.querySelector(".main");
       const closeBtn = document.querySelector(".close-btn");
@@ -29,7 +29,7 @@ function displayBanner(currentPhotographer, displayMediaList) {
   
       dialog.classList.add("opened");
       closeBtn.focus();
-      dialogMask.addEventListener("click", (e) => {
+      dialogMask.addEventListener("click", () => {
         const dialog = document.querySelector(".dialog");
         const main = document.querySelector(".main");
         dialog.classList.remove("opened");
