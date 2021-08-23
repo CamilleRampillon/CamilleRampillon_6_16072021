@@ -10,7 +10,7 @@ function displayBanner(currentPhotographer, displayMediaList) {
     const linkToPhoto =
       "./img/PhotographersID/" + currentPhotographer.portrait;
   
-    //  création des elements html
+    //  création des éléments html
     const bannerBody = document.createElement("div");
     const bannerTitle = document.createElement("h1");
     const bannerLocation = document.createElement("p");

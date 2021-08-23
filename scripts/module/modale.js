@@ -36,7 +36,7 @@ function verifModal(currentPhotographer) {
   let verifMail;
   let verifMsg;
 
-  // verifie si les champs de la modal sont bien remplis
+  // vérifie si les champs de la modale sont bien remplis
   formFirstName.addEventListener("input", (e) => {
     if (e.target.value.length <= 3) {
       errorMessage[0].style.display = "inline";
@@ -104,7 +104,7 @@ function verifModal(currentPhotographer) {
     }
   });
 
-  // submit form
+  // submit du formulaire
   document.getElementById("contact").addEventListener("submit", function (e) {
     e.preventDefault();
     if (
@@ -123,7 +123,7 @@ function verifModal(currentPhotographer) {
       modalTitle.innerHTML = `Votre message a bien été envoyé à <br>${currentPhotographer.name} `;
       modalTitle.classList.add("message-valid");
 
-      // log des information entrée par l'uttisatteur
+      // log des informations entrées par l'utilisateur
       let datas = new FormData(bannerModal);
       for (let i of datas.entries()) {
         console.log(i[0], ":", i[1]);

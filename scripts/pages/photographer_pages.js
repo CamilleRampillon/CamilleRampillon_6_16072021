@@ -29,9 +29,9 @@ window.addEventListener("load", () => {
     .then((data) => createData(data))
     .then(displayPage);
 });
-// création des données a afficher sur la page
+// création des données à afficher sur la page
 function createData(data) {
-  // créer un objet photographe si l'id est egale a l'id de l'adresse
+  // créer un objet photographe si l'id est égale à l'id de l'adresse
   data.photographers.forEach((photographer) => {
     if (photographer.id === Number(urlParams.get("id"))) {
       currentPhotographer = new Photographers(
@@ -46,7 +46,7 @@ function createData(data) {
       );
     }
   });
-  // recupere les medias du phototographe courant
+  // récupère les médias du phototographe courant
   data.media.forEach((media) => {
     if (media.photographerId === currentPhotographer.id) {
       media.getLikes;
